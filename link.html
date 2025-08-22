@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flávio Nunes | Links Afiliados</title>
+  <meta name="description" content="Todos os meus links de afiliado em um só lugar." />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: rgba(255, 255, 255, 0.06);
+      --text: #e6ebf0;
+      --muted: #9fb3c8;
+      --accent: #0ea5e9;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f5f7fb;
+        --card: #ffffff;
+        --text: #0b1220;
+        --muted: #5b6b7b;
+        --shadow: 0 8px 24px rgba(15, 23, 42, .08);
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      display: grid;
+      place-items: center;
+      padding: 32px 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(148,163,184,.15);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      padding: 28px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,.12);
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+
+    h1 { font-size: 1.6rem; margin: 0 0 6px; }
+    .bio { color: var(--muted); margin: 0 0 20px; }
+
+    .links { display: grid; gap: 12px; }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(148,163,184,.18);
+      background: rgba(255,255,255,.06);
+      text-decoration: none;
+      color: inherit;
+      font-weight: 600;
+      transition: transform .08s ease, border-color .2s ease;
+    }
+    .link:hover { transform: translateY(-2px); border-color: var(--accent); }
+
+    footer { margin-top: 20px; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <section class="card">
+    <img class="avatar" src="img/alertanews.jpg" alt="Foto de perfil" />
+    <h1>Desconto Certeiro</h1>
+    <p class="bio">Aproveite os melhores descontos para suas compras 🛒💸</p>
+
+    <div class="links">
+      <a class="link" href="https://collshp.com/produtos2024c" target="_blank">🛒 Shopee Afiliados</a>
+      <a class="link" href="https://www.magazinevoce.com.br/magazinelojaflavionunes/" target="_blank">🛍️ Magalu Parceiro</a>
+      <a class="link" href="https://mercadolivre.com/sec/2biF78q" target="_blank">📦 Mercado Livre Afiliados</a>
+      <a class="link" href="https://onelink.shein.com/15/4ykdhz7ejcih" target="_blank">👗 Shein Afiliados</a>
+      <a class="link" href="https://vt.tiktok.com/ZSAMbpqLd/?page=TikTokShop" target="_blank">🎥 TikTok Shop</a>
+      <a class="link" href="https://www.instagram.com/descontos_certeiro?igsh=MTh4azljZWk3bm53OA%3D%3D&utm_source=qr" target="_blank">📸 Instagram</a>
+    </div>
+
+    <footer>© <span id="year"></span> DescontoCerteiro</footer>
+  </section>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
